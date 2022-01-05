@@ -1,3 +1,4 @@
+/* HEADER */
 body {
     padding-top: 76px;
 }
@@ -5,4 +6,26 @@ body {
 .box-shadow {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
                 0 4px 8px 0 rgba(0, 0, 0, .05);
+}
+
+/* QUOTE */
+#home-quote {
+    background: url('../img/bg-quote.jpg') center center;
+    background-size: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    /* header */
+    body {
+        padding-top: 0;
+    }
+    .fixed-top {
+        position: relative;
+    }
+
+    /* quote */
+    #home-quote .display-4 {
+        font-size: 2.3rem;
+    }
 }
