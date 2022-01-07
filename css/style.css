@@ -1,3 +1,18 @@
+/* BOOTSTRAP OVERRIDE */
+.accordion-button::after {
+    background-image: none;
+    width: 0;
+    height: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+
+button.accordion-button:focus {
+    box-shadow: none;
+}
+
 /* HEADER */
 body {
     padding-top: 76px;
