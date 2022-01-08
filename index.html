@@ -13,6 +13,35 @@
 </head>
 
 <body>
+    <!-- MODAL -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginLabel">Entre na sua conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="loginSenha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="loginSenha">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <div class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <nav class="navbar navbar-expand-md navbar-light bg-light container-fluid fixed-top p-3 box-shadow">
         <a href="index.html" class="navbar-brand">
@@ -50,7 +79,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
                 </li>
 
                 <li class="nav-item">
@@ -182,7 +211,7 @@
                 </div>
             </div>
 
-            <a href="planos.html" class="btn btn-primary btn-lg mt-2">Comprar Plano</a>
+            <a href="planos.html" class="btn btn-primary btn-lg mb-3">Comprar Plano</a>
         </div>
     </section>
 
@@ -200,7 +229,7 @@
 
     <!-- PERGUNTAS FREQUENTES -->
     <section class="container">
-        <div class="mt-5 mb-4 text-center">
+        <div class="mt-5 mb-4 text-center pt-md-3">
             <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
             <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
         </div>
@@ -295,16 +324,16 @@
     </section>
 
     <!-- FOOTER -->
-     <footer class="bg-dark text-white">
-        <div class="container py-4">
+    <footer class="bg-dark text-white">
+        <div class="container pt-4 py-2">
             <div class="row">
                 <div class="col-6 col-md-3 mb-sm-3">
-                     <h2 class="h6">PÁGINAS</h2>
-                     <ul class="list-unstyled">
-                         <li><a href="planos.html">Planos</a></li>
-                         <li><a href="contato.html">Contato</a></li>
-                         <li><a href="inscricao.html">Inscreva-se</a></li>
-                     </ul>
+                    <h2 class="h6">PÁGINAS</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="inscricao.html">Inscreva-se</a></li>
+                    </ul>
                 </div>
 
                 <div class="col-6 col-md-3 mb-sm-3">
@@ -339,7 +368,7 @@
         <div class="bg-primary text-center py-2 py-md-3">
             <p class="mb-0">Caravan © 2017. Alguns direitos reservados.</p>
         </div>
-     </footer>
+    </footer>
 
     <script src="/js/bootstrap.js"></script>
     <script src="/js/app.js"></script>
