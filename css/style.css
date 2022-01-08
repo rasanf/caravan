@@ -1,4 +1,8 @@
 /* BOOTSTRAP OVERRIDE */
+a {
+    text-decoration: none;
+}
+
 .accordion-button::after {
     background-image: none;
     width: 0;
