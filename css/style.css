@@ -33,6 +33,15 @@ body {
     background-size: cover;
 }
 
+/* PLANOS */
+.lista-plano li + li {
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.lista-plano li {
+    padding: 1rem;
+}
+
 /* RESPONSIVE */
 @media (max-width: 767px) {
     /* header */
